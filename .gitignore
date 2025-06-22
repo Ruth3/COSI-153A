@@ -1,2 +1,14 @@
+# Ignore system files
+.DS_Store
+
+# Ignore build/cache
+.expo/
+.expo-shared/
+
+# Ignore dependency folders
 schoolhouse_app/node_modules/
+
+# Optional: Ignore compiled output
+*.log
+*.tmp
 
