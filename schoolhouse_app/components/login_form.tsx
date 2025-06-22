@@ -66,7 +66,7 @@ export default function LoginForm() {
 
   return (
     <ScrollView contentContainerStyle={styles.wrapper} keyboardShouldPersistTaps="handled">
-      <Text style={styles.title}>KidCare Connect</Text>
+      <Text style={styles.title}>Schoolhouse</Text>
       <Text style={styles.subtitle}>Connecting families and childcare professionals</Text>
 
       <View style={styles.tabContainer}>

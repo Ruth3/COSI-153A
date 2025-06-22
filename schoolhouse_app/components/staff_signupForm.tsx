@@ -44,19 +44,12 @@ export default function StaffSignupForm() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>KidCare Connect</Text>
-      <Text style={styles.subtitle}>Connecting families and childcare professionals</Text>
-
-      <View style={styles.tabRow}>
-        <Text style={[styles.tab, styles.inactiveTab]}>Login</Text>
-        <Text style={[styles.tab, styles.activeTab]}>Sign Up</Text>
-      </View>
-
+      
       <Text style={styles.header}>Create Account</Text>
       <Text style={styles.subheader}>Registering as Staff Member</Text>
 
-      <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
-        <Text style={styles.backText}>Back</Text>
+      <TouchableOpacity onPress={() => router.replace('/signup')} style={styles.backButton}>
+        <Text style={styles.backText}>← Back</Text>
       </TouchableOpacity>
 
       <View style={styles.row}>
@@ -140,7 +133,7 @@ const styles = StyleSheet.create({
   header: { fontSize: 18, fontWeight: '700', marginBottom: 4 },
   subheader: { fontSize: 14, color: '#6b7280', marginBottom: 12 },
   backButton: { marginBottom: 12 },
-  backText: { color: '#111827', fontWeight: '600' },
+  backText: { color: '#111827', fontWeight: '600', fontSize: 16 },
   row: { flexDirection: 'row', justifyContent: 'space-between' },
   input: {
     borderWidth: 1,

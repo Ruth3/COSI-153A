@@ -93,41 +93,12 @@ export default function ParentSignupForm() {
         onChangeText={(text) => handleChange('childName', text)}
       />
 
-      <View style={styles.row}>
-        <TextInput
-          style={[styles.input, styles.halfInput]}
-          placeholder="Child's Age"
-          keyboardType="numeric"
-          value={form.childAge}
-          onChangeText={(text) => handleChange('childAge', text)}
-        />
-        <TextInput
-          style={[styles.input, styles.halfInput]}
-          placeholder="Grade Level"
-          value={form.childGrade}
-          onChangeText={(text) => handleChange('childGrade', text)}
-        />
-      </View>
 
       <TextInput
         style={styles.input}
         placeholder="Emergency Contact"
         value={form.emergencyContact}
         onChangeText={(text) => handleChange('emergencyContact', text)}
-      />
-
-      <TextInput
-        style={styles.input}
-        placeholder="Allergies/Dietary Restrictions"
-        value={form.allergies}
-        onChangeText={(text) => handleChange('allergies', text)}
-      />
-
-      <TextInput
-        style={styles.input}
-        placeholder="Special Needs/Notes"
-        value={form.specialNeeds}
-        onChangeText={(text) => handleChange('specialNeeds', text)}
       />
 
       <TouchableOpacity style={styles.submitButton} onPress={handleSubmit}>

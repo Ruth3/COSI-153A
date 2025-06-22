@@ -6,7 +6,7 @@ export default function SignUpPage() {
 
   return (
     <View style={styles.wrapper}>
-      <Text style={styles.title}>KidCare Connect</Text>
+      <Text style={styles.title}>Schoolhouse</Text>
       <Text style={styles.subtitle}>Connecting families and childcare professionals</Text>
 
       <View style={styles.tabContainer}>
